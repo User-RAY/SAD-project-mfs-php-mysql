@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f6fa;
+}
+
+
+.container {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.balance-card {
+    background-color: #eef7ff;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.balance-card .balance {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.balance-card .balance span {
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    color: #555;
+}
+
+.btn-logout {
+    padding: 8px 16px;
+    background-color: #eef7ff;
+    color: #222;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.welcome {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.action-btn {
+    background-color: #fff;
+    border: 1px solid #e1e3ea;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #222;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.action-btn:hover {
+    background-color: #eef7ff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+  }
