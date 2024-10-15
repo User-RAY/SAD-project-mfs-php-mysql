@@ -1,6 +1,14 @@
 <?php
 session_start();
 
+
+if(isset($_SESSION["phone"])){
+
+    header("location: home.php");
+
+}
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
     $pin = $_POST['pin'];

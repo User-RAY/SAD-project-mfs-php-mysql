@@ -5,7 +5,7 @@
 
     if(isset($_SESSION["phone"])){
         $authenticated = true;
-        header("location: /home.php");
+        header("location: home.php");
     }
 ?>
 
@@ -105,7 +105,7 @@
     }
 
     // Validate phone number (must be at least 11 digits)
-    if (phone.length < 11 || isNaN(phone)) {
+    if (phone.length < 11 || isNaN(phone) || phone.length > 11) {
         errorMessage += "Please enter a valid 11-digit phone number.\n";
     }
 

@@ -9,7 +9,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
     let errorMessage = "";
 
     // Phone number validation
-    if (!phone || phone.length < 10) {
+    if (!phone || phone.length < 11) {
         errorMessage += "Please enter a valid phone number.\n";
     }
 

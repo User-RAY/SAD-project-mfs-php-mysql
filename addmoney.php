@@ -2,6 +2,14 @@
 session_start();
 include "scripts/connect.php"; // Assuming this contains the database connection
 
+if (!isset($_SESSION['phone'])) {
+
+    header("Location: index.php");  
+
+    exit;
+
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $amount = $_POST['amount'];
     $phone = $_SESSION["phone"]; // Get the user's phone from session

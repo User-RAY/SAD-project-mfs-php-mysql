@@ -2,6 +2,15 @@
 session_start();
 include "scripts/connect.php";
 
+
+if (!isset($_SESSION['phone'])) {
+
+    header("Location: index.php");  
+
+    exit;
+
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $amount = $_POST['amount'];
     $recipientPhone = $_POST['recipient_phone'];

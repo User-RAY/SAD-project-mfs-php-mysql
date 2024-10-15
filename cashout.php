@@ -4,7 +4,7 @@ include "scripts/connect.php";
 
 // Check if the user is logged in
 if (!isset($_SESSION['phone'])) {
-    header("Location: login.php");  // Redirect to login if user is not logged in
+    header("Location: index.php");  // Redirect to login if user is not logged in
     exit;
 }
 
